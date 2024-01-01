@@ -15,6 +15,12 @@ gem "puma", "~> 5.0"
 # rails本体（標準gem）
 gem "rails", "~> 7.0.4"
 
+# メッセージを日本語化
+gem "rails-i18n"
+
+# ページネーション機能を提供する
+gem "kaminari"
+
 # タイムゾーン情報を提供する（標準gem）
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
@@ -36,7 +42,13 @@ gem "devise_token_auth"
 # レスポンスJSONを制御する
 gem "active_model_serializers"
 
+# enum を日本語化する
+gem "enum_help"
+
 group :development, :test do
+  # N+1発生時にアラートを表示する
+  gem "bullet"
+
   gem "letter_opener_web"
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
