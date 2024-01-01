@@ -16,7 +16,6 @@ import {
 } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { useUserState } from '@/hooks/useGlobalState'
 
